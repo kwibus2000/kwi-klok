@@ -32,9 +32,7 @@ const months = [
 toggle.addEventListener('click', () => {
   const html = document.querySelector('html')
   html.classList.toggle('dark')
-  toggle.innerText = html.classList.contains('dark')
-    ? 'Light mode'
-    : 'Dark mode'
+  toggle.innerText = html.classList.contains('dark') ? 'Licht aan' : 'Licht uit'
 })
 
 function setTime() {
