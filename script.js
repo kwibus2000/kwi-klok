@@ -48,6 +48,9 @@ function setTime() {
   hourEl.style.transform = `translate(-50%, -100%) rotate(${
     hoursForClock * 30
   }deg)`
+  hourEl.style.transition = `${
+    hoursForClock === 0 ? 'none' : 'all 0.5s ease-in'
+  }`
 
   minuteEl.style.transform = `translate(-50%, -100%) rotate(${minutes * 6}deg)`
   minuteEl.style.transition = `${minutes === 0 ? 'none' : 'all 0.5s ease-in'}`
